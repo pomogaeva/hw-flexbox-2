@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Hans Kendrick Regular';
+  src: url('../fonts/NeueHansKendrick-Regular.otf') format('opentype'),
+       url('../fonts/NeueHansKendrick-Regular.ttf') format('truetype');
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hans Kendrick Regular', sans-serif;
+  background-color: #e2e7ec;
+  text-transform: uppercase;
+}
+
+.container {
+  height: 100%;
+  margin: auto;
+  padding: 20px;
+}
+
+.row {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.tile {
+  padding: 0;
+  margin: 15px;
+  width: 380px;
+  min-height: 100%;
+  background-color: #fff;
+  align-items: center;
+}
+
+.first-tile {
+  flex-grow: 2;
+  position: relative;
+}
+
+.tile-image {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.tile-description {
+  padding: 15px;
+}
+
+.first-tile-description {
+  position: absolute;
+  bottom: 10px;
+  right: 150px;
+  padding-left: 40px;
+}
+
+.tile-date,
+.tile-title {
+  padding-bottom: 15px;
+}
+
+.tile-date,
+.footer-description {
+  font-size: 16px;
+  color: #8d9aa6; 
+}
+
+.tile-title {
+  font-size: 24px;
+}
+
+.first-tile-title {
+  font-size: 36px;
+  color: #fff;
+}
+
+.no-date {
+  padding-top: 45px;
+}
+
+.tile-author-image {
+  padding-top: 80px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0 50px 0;
+}
+
+.footer-description {
+  padding-left: 10px;
+}
